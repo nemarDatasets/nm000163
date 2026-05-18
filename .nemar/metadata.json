@@ -1,0 +1,122 @@
+{
+  "version": "2.0",
+  "pipeline_stage": "validated",
+  "authors": {
+    "Kalou Cabrera Castillos": {
+      "orcid": "0009-0007-3501-5885"
+    },
+    "Simon Ladouce": {
+      "orcid": "0000-0001-6760-6240"
+    },
+    "Ludovic Darmet": {
+      "orcid": "0000-0001-5445-9763"
+    },
+    "Frédéric Dehais": {}
+  },
+  "related_identifiers": [
+    {
+      "identifier": "10.1016/j.neuroimage.2023.120446",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/nm000163",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=nm000163",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.5281/zenodo.8255618",
+      "identifier_type": "DOI",
+      "relation_type": "IsVersionOf"
+    }
+  ],
+  "funding_references": [
+    {
+      "funder_name": "AID (Powerbrain project), France"
+    },
+    {
+      "funder_name": "AXA Research Fund Chair for Neuroergonomics, France"
+    },
+    {
+      "funder_name": "Chair for Neuroadaptive Technology, Artificial and Natural Intelligence Toulouse Institute (ANITI), France"
+    },
+    {
+      "funder_name": "AID",
+      "award_title": "Powerbrain project"
+    },
+    {
+      "funder_name": "AXA Research Fund",
+      "award_title": "Chair for Neuroergonomics"
+    },
+    {
+      "funder_name": "Artificial and Natural Intelligence Toulouse Institute (ANITI)",
+      "award_title": "Chair for Neuroadaptive Technology"
+    }
+  ],
+  "title": "c-VEP and Burst-VEP dataset from Castillos et al. (2023)",
+  "license": "CC-BY-4.0",
+  "dataset_type": "derivative",
+  "resource_type_general": "Dataset",
+  "modalities": [
+    "eeg"
+  ],
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "165.3 MB (15 files)"
+  ],
+  "formats": [
+    ".bdf",
+    ".html",
+    ".json",
+    ".md",
+    ".tsv",
+    ".yaml",
+    ".yml"
+  ],
+  "description": "This dataset comprises code-modulated Visual Evoked Potential (c-VEP) EEG recordings from 12 healthy participants performing a 2-class reactive brain-computer interface task with 4 targets. The study compares novel burst c-VEP sequences with traditional m-sequences at two stimulus amplitude depths (100% and 40%), evaluating classification performance, calibration efficiency, and user experience. EEG was recorded at 500 Hz using a 32-channel BrainProducts system with convolutional neural network decoding achieving 95.6% accuracy.",
+  "methods_description": "Twelve healthy participants (mean age 30.6±7.1 years) completed an offline 2-class c-VEP protocol with 4 targets using a factorial within-subject design. EEG was recorded at 500 Hz using a BrainProducts LiveAmp 32-channel system with active electrodes in a standard 10-20 montage (reference: FCz, ground: FPz). Visual stimuli were presented on a 60 Hz Dell monitor. Burst codes consisted of brief aperiodic flashes (2-4 flashes/second, ~50ms duration, ≥200ms inter-burst interval), while m-sequences used Fibonacci-type LFSR with 132-frame subsequences. A CNN architecture with spatial (8×1, 16 filters), temporal (1×32, 8 filters), and 2D convolution (5×5, 4 filters) layers decoded EEG using 250ms sliding windows with 2ms stride. Classification employed sequential train/test splits with Pearson correlation for target selection, with calibration data ranging from 1-6 blocks (8.8-52.8 seconds).",
+  "keywords": [
+    {
+      "term": "code-modulated visual evoked potentials"
+    },
+    {
+      "term": "c-VEP"
+    },
+    {
+      "term": "Burst-VEP"
+    },
+    {
+      "term": "Brain-Computer Interfaces",
+      "subject_scheme": "MeSH",
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
+    },
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "convolutional neural networks"
+    },
+    {
+      "term": "reactive BCI"
+    },
+    {
+      "term": "visual stimulation"
+    },
+    {
+      "term": "visual evoked potentials"
+    },
+    {
+      "term": "amplitude depth"
+    },
+    {
+      "term": "stimulus intensity"
+    }
+  ],
+  "source_hash": "d8e3a6c4198472585c60767488d35d7ea14d4d60644c99772a76bd7720f739f6"
+}
