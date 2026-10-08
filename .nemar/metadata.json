@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "c-VEP and Burst-VEP dataset from Castillos et al. (2023)",
-  "description": "This dataset contains 32-channel EEG recordings from 12 healthy participants performing an offline 4-class code-modulated visual evoked potential (c-VEP) task. It compares novel burst c-VEP sequences with traditional m-sequences at 100% and 40% amplitude depth, in a factorial within-subject design. The data support evaluation of CNN-based decoding, classification accuracy with minimal calibration data, and user visual comfort in reactive brain-computer interfaces.",
-  "methods_description": "EEG was recorded at 500 Hz with a BrainProducts LiveAmp 32-channel system (Acticap active electrodes, FCz reference, FPz ground). Stimuli were presented with PsychoPy on a 60 Hz monitor. Participants focused on cued targets in 15 blocks of 4 trials. Burst and m-sequence codes were compared at two amplitude depths. Decoding used a CNN with 250 ms sliding windows and Pearson correlation for target selection.",
+  "description": "EEG dataset from 12 healthy participants performing an offline 4-class code-modulated visual evoked potential (c-VEP) reactive BCI task. The study compared novel burst c-VEP sequences with traditional m-sequences at 100% and 40% amplitude depth, evaluating classification accuracy, calibration requirements and user experience. Recordings used a 32-channel BrainProducts LiveAmp system at 500 Hz, and classification used a convolutional neural network.",
+  "methods_description": "Twelve participants focused on cued targets in a factorial design (burst vs m-sequence, 100% vs 40% amplitude depth) on a 60 Hz monitor with PsychoPy. EEG was recorded at 500 Hz from 32 active electrodes (BrainProducts LiveAmp, reference FCz). A CNN with spatial, temporal and 2D convolution layers decoded 250 ms sliding windows, with 1-6 calibration blocks and Pearson correlation for target selection.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -23,27 +23,26 @@
       "term": "EEG"
     },
     {
-      "term": "code-modulated visual evoked potentials"
-    },
-    {
       "term": "Brain-Computer Interfaces",
       "subject_scheme": "MeSH",
-      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
       "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
+    },
+    {
+      "term": "Evoked Potentials, Visual",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D005074"
+    },
+    {
+      "term": "code-modulated VEP"
+    },
+    {
+      "term": "burst c-VEP"
     },
     {
       "term": "reactive BCI"
     },
     {
       "term": "convolutional neural network"
-    },
-    {
-      "term": "visual comfort"
-    },
-    {
-      "term": "Evoked Potentials, Visual",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D005074"
     }
   ],
   "related_identifiers": [
@@ -87,6 +86,18 @@
     },
     {
       "funder_name": "Chair for Neuroadaptive Technology, Artificial and Natural Intelligence Toulouse Institute (ANITI), France"
+    },
+    {
+      "funder_name": "AID",
+      "award_title": "Powerbrain project"
+    },
+    {
+      "funder_name": "AXA Research Fund",
+      "award_title": "Chair for Neuroergonomics"
+    },
+    {
+      "funder_name": "Artificial and Natural Intelligence Toulouse Institute (ANITI)",
+      "award_title": "Chair for Neuroadaptive Technology"
     }
   ],
   "resource_type_general": "Dataset",
@@ -106,5 +117,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "d8e3a6c4198472585c60767488d35d7ea14d4d60644c99772a76bd7720f739f6"
+  "source_hash": "22c5af6ee21b19d8d147a931caed96e0a7c7d48b45419488df22387ac6d0b230"
 }
